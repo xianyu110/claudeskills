@@ -15,17 +15,6 @@
 
 ## 🎨 内容创作类
 
-### 📝 wechat-article-rewriter
-**公众号文章改写去水印工具**
-
-一键抓取微信公众号文章，智能改写并去除水印，生成全新原创内容。
-
-- 🔗 一键抓取公众号文章
-- ✍️ 智能改写保持核心观点
-- 🧹 自动去除水印和推广信息
-- 📝 保留原文格式结构
-- 🎯 支持多种改写模式（轻度/深度/风格转换）
-
 ### 📱 wechat-auto-writer
 **微信公众号自动写作助手**
 
@@ -190,21 +179,26 @@
 
 ## 📖 使用说明
 
+所有技能位于 `.claude/skills/` 目录下，每个技能都包含：
+- `SKILL.md` - 技能的详细说明和使用方法
+- `README.md` - 技能的简介和快速开始指南
+- 其他必要的脚本和配置文件
+
 ### 安装方式
 
 1. **克隆仓库**
 ```bash
-git clone https://github.com/xianyu110/claudeskills.git
-cd claudeskills
+git clone https://github.com/xianyu110/my-awesome-skills.git
+cd my-awesome-skills
 ```
 
 2. **复制到 Claude Skills 目录**
 ```bash
 # 复制单个 skill
-cp -r ai-mirror-publisher ~/.claude/skills/
+cp -r .claude/skills/bananapro-image-gen ~/.claude/skills/
 
 # 或复制所有 skills
-cp -r * ~/.claude/skills/
+cp -r .claude/skills/* ~/.claude/skills/
 ```
 
 3. **安装依赖**
@@ -234,17 +228,13 @@ cp -r * ~/.claude/skills/
 ### 使用示例
 
 ```bash
-# 使用文章改写工具
-cd wechat-article-rewriter
-ts-node scripts/rewrite.ts --url "https://mp.weixin.qq.com/s/xxxxx"
-
 # 生成知识漫画
-cd baoyu-comic
-/baoyu-comic posts/article.md --style dramatic
+cd ~/.claude/skills/baoyu-comic
+# 在 Claude 中使用 /baoyu-comic 命令
 
-# 批量发布镜像站指南
-cd ai-mirror-publisher
-bun run scripts/publish.ts
+# 批量生成图像
+cd ~/.claude/skills/bananapro-image-gen
+# 在 Claude 中使用相关命令
 ```
 
 ### 注意事项
