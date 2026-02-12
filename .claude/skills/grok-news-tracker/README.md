@@ -16,7 +16,7 @@
 ### 1. 设置 API 密钥
 
 ```bash
-export GROK_API_KEY="sk-0bJSrMXaPm4Uvvs9RzjDWYh3eO81UkNpYELtfTMPJGRTxl6C"
+export GROK_API_KEY="sk-xxxx"
 ```
 
 ### 2. 追踪今日热点
