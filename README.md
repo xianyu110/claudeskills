@@ -1,62 +1,41 @@
-# Writing Assistant Skill
+# My Awesome Skills
 
-自媒体写作助手 Skill，帮助完成从选题到发布的完整流程。
+高效开发工作流 OpenClaw Skills 集合。所有 skills 都统一收纳在 `.claude/skills/` 目录下。
 
-## 安装
+## 📦 Skills 列表 (位于 `.claude/skills/`)
+
+- `ai-code-generator`: AI 辅助代码生成器
+- `book-writing-spec`: 书籍写作规范
+- `content`: 各种内容创作相关的 skills (baoyu 系列)
+- `desktop-control`: 桌面控制
+- `dev-efficiency-monitor`: 开发效率监控器
+- `efficient-git-workflow`: 高效代码提交工作流
+- `parallel-task-manager`: 并行任务管理器
+- `social-push`: 社交媒体推送
+- `wechat-auto-writer`: 微信文章自动写作
+- `wechat-publisher-0.1.0`: 微信文章发布
+- `wechat-zimage-generator`: 微信图片生成器
+- `xiaohongshu`: 小红书相关技能
+- `zimage`: Z-Image 模型图片生成
+
+## 🚀 快速开始
+
+### 安装
 
 ```bash
-# 复制到 Claude Code skills 目录
-cp -r writing-assistant ~/.claude/skills/
+# 克隆仓库
+git clone https://github.com/xianyu110/my-awesome-skills.git
+cd my-awesome-skills
+
+# 复制到 OpenClaw skills 目录
+# 确保你的 OpenClaw 配置会加载 .claude/skills 目录，或者手动复制
+cp -r .claude/skills/* ~/.openclaw/extensions/skills/
 ```
 
-## 文件结构
-
-```
-writing-assistant/
-├── SKILL.md           # 入口（场景路由+检查清单）
-├── about-me.md        # 关于我（定位+禁区+术语降维）⬅️ 需自定义
-├── user-personas.md   # 用户画像（3类用户+4层需求）⬅️ 需自定义
-└── content/methods/
-    ├── 01-选题.md  # 三维匹配法
-    ├── 02-大纲.md  # 销售漏斗+承诺设计
-    ├── 03-正文.md  # 认知科学+可视化
-    ├── 04-标题.md  # 数字冲击力法
-    └── 05-排版.md  # 公众号适配
-```
-
-## 使用前必做
-
-1. **编辑 `about-me.md`** — 填入你的定位、禁区、术语降维表
-2. **编辑 `user-personas.md`** — 定义你的3类目标用户
-
-## 使用流程
-
-```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│  1. 读基础文件   │ →  │  2. 按阶段执行   │ →  │  3. 检查打分    │
-│                 │    │                 │    │                 │
-│ about-me.md     │    │ methods/01→05   │    │ ≥80% = 发布     │
-│ user-personas   │    │ 选题→大纲→正文   │    │ 60-79% = 优化   │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
-```
-
-## 核心方法论
-
-| 阶段 | 方法论 | 公式 |
-|------|--------|------|
-| 选题 | 三维匹配法 | 价值 = 人 × 情境 × 信息 |
-| 大纲 | 承诺设计法 | 承诺 = 实际价值 × 0.8 |
-| 正文 | 认知科学 | 图像(50ms) >> 文字(200ms) |
-| 标题 | 数字冲击力 | 吸引力 = 数字对比 × 戏剧性 × 低门槛 |
-
-## 场景示例
-
-```
-"帮我检查一下这篇文章"     → 用检查清单打分
-"帮我写一篇关于XX的文章"   → 按 methods/01→05 执行
-"这篇数据不好，帮我诊断"   → 检查清单排查
-```
-
-## License
+## 📝 许可证
 
 MIT
+
+---
+
+**灵感来源：** OpenClaw 作者 Peter Steinberger 一天提交 627 次代码的极速开发模式
