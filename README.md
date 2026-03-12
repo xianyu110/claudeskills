@@ -58,7 +58,9 @@ ClaudeSkills/
 │   ├── flutter-api/          # Flutter API skill
 │   ├── mcp-builder/          # MCP server builder skill (official)
 │   ├── podcast/              # Podcast generator using Volcano Engine
-│   └── wechat-article-writer/ # WeChat official account article writer
+│   ├── tech-article-writer/  # Tech article writing skill
+│   ├── Product Manager Skill - Claude.skill  # 🆕 PM PRD skill (Skills 2.0)
+│   └── Wechat Article Writer Skill.skill     # 🆕 WeChat writer (Skills 2.0)
 └── docs/                     # Additional documentation
 ```
 
@@ -142,17 +144,26 @@ Generate AI podcasts using Volcano Engine's podcast model.
 - Streaming audio reception
 - Resume from breakpoint support
 
-### 8. ✍️ WeChat Article Writer
-**Path**: `skills/wechat-article-writer/`
+### 8. ✍️ WeChat Article Writer (Skills 2.0)
+**Path**: `skills/Wechat Article Writer Skill.skill`
 
-Professional WeChat official account article creation assistant.
+Professional WeChat official account article creation assistant — upgraded to Skills 2.0 single-file format with 4 writing style modes.
+
+**What's New in 2.0**:
+- **Official Copy** (original strength, 88% → 100%) — product launches, brand promotion. Full style-guide, sensitive word filtering, CTA templates
+- **Tech Blog** (new, 25% → 88%) — biggest addition. "A tech person chatting with friends" tone, first-person perspective, code block standards, 5 developer-oriented title formulas, anti-pattern checks (no "In recent years with the development of AI..." openings)
+- Convert web content, text, or images into WeChat articles
+- Content enrichment using search tools
+
+### 9. 📋 Product Manager PRD Writer (Skills 2.0)
+**Path**: `skills/Product Manager Skill - Claude.skill`
+
+Professional product requirements document (PRD) writing skill — Skills 2.0 format.
 
 **Features**:
-- Convert web content, text, or images into WeChat articles
-- Official copywriting style optimization
-- Title optimization with proven formulas
-- Content enrichment using search tools
-- Quality checklist and style guide
+- **5-step creation workflow** — replaces original 4-step, adds "Requirement Decomposition" (known/inferred/confirm trichotomy to reduce unnecessary questions) and "Writing Quality Polish" (information density, definitive expressions, data support)
+- **Per-chapter quality standards table** — requirement background, user scenarios, functional requirements, non-functional requirements, acceptance criteria, analytics tracking — each chapter has a "developer can start coding after reading" quality bar with common failure patterns
+- **IPO function description pattern** (Input → Process → Output → Exception) — transforms single-sentence feature descriptions into spec sheets that developers can directly map to code structure
 
 ## 💻 Usage Examples
 
@@ -256,7 +267,8 @@ Our skills are organized into the following categories:
   - Document Skills (DOCX, PDF, PPTX, XLSX)
 
 - **✍️ Content Creation**
-  - WeChat Article Writer
+  - WeChat Article Writer (Skills 2.0)
+  - Product Manager PRD Writer (Skills 2.0)
   - Podcast Generator
 
 - **🎙️ Media & Audio**
@@ -308,5 +320,5 @@ If you find this repository helpful, please consider giving it a star! ⭐
 
 **Made with ❤️ by the Claude community**
 
-*Last updated: October 31, 2024*
+*Last updated: March 12, 2026*
 
